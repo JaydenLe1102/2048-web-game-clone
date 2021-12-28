@@ -1,0 +1,101 @@
+
+.page_container{
+  width: 500px;
+  margin: 0 auto;
+  height: 1000px;
+  margin-top: 100px
+}
+
+
+h1.title{
+  margin: 0;
+  display: block;
+  font-size: 75px;
+  float: left;
+}
+
+
+.score_container{
+  display: flex;
+  float: right;
+  
+}
+
+.score_container > div {
+  position: relative;
+  display: block;
+  background-color: #BDB76B;
+  border: 1px solid black;
+  width: 100px;
+  height: 50px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.new_game{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.new_game > button{
+  background: #8f7a66;
+    border-radius: 3px;
+    padding: 0 20px;
+    text-decoration: none;
+    color: #f9f6f2;
+    height: 40px;
+    line-height: 42px;
+    cursor: pointer;
+    display: block;
+    text-align: center;
+    flex-shrink: 0;
+}
+
+
+.grid-container {
+
+  display: grid;
+  grid-gap: 20px;
+  background-color: #BDB76B; 
+  grid-template-columns: repeat(4, 100px);
+  grid-template-rows: 100px 100px 100px 100px;
+  width: 500px;
+  height: 500px;
+  justify-content: center;
+  align-content: center;
+  margin: auto;
+  border-radius: 15px;
+  /*position: relative;*/
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid black;
+  text-align: center;
+  align-content: center;
+  line-height: 100px;
+  font-size: 40px;
+  border-radius: 10px;
+  transition: 100ms ease-in-out;
+  transition-property: transform;
+  
+  /*position:absolute;*/
+}
+
+.move{
+  transform: translate(0px, 0px);
+}
+
+
+.new_tile{
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgb(226, 15, 15);
+  text-align: center;
+  align-content: center;
+  line-height: 100px;
+  font-size: 40px;
+  border-radius: 10px;
+}
+
